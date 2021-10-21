@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="cabecalho">
+        <div><h1>Jogo da Velha</h1></div>
+        <div id="quemJoga">Quem está jogando: 
+            <input type="radio" name="jogador" checked id="jogador1" disabled><label for="jogador1" id="jogador1Label">Jogador 1</label></input>
+            <input type="radio" name="jogador" id="jogador2" disabled><label for="jogador2" id="jogador2Label">Jogador 2</label></input>
+        </div>
+        <div id="resultado">Continue Jogando</div>
+    </div>
+    <div id="grid-template">
+        <div id="id1" class="campo" onclick="jogar('id1',0,0)">
+            <img src="x.png" alt="" id="id1X">
+            <img src="o.jpg" alt="" id="id1O">
+            <img src="branco.png" alt="" id="id1B">
+        </div>
+        <div id="id2" class="campo" onclick="jogar('id2',0,1)">
+            <img src="x.png" alt="" id="id2X">
+            <img src="o.jpg" alt="" id="id2O">
+            <img src="branco.png" alt="" id="id2B">
+        </div>
+        <div id="id3" class="campo" onclick="jogar('id3',0,2)">
+            <img src="x.png" alt="" id="id3X">
+            <img src="o.jpg" alt="" id="id3O">
+            <img src="branco.png" alt="" id="id3B">
+        </div>
+        <div id="id4" class="campo" onclick="jogar('id4',1,0)">
+            <img src="x.png" alt="" id="id4X">
+            <img src="o.jpg" alt="" id="id4O">
+            <img src="branco.png" alt="" id="id4B">
+        </div>
+        <div id="id5" class="campo" onclick="jogar('id5',1,1)">
+            <img src="x.png" alt="" id="id5X">
+            <img src="o.jpg" alt="" id="id5O">
+            <img src="branco.png" alt="" id="id5B">
+        </div>
+        <div id="id6" class="campo" onclick="jogar('id6',1,2)"> 
+            <img src="x.png" alt="" id="id6X">
+            <img src="o.jpg" alt="" id="id6O">
+            <img src="branco.png" alt="" id="id6B">
+        </div>
+        <div id="id7" class="campo" onclick="jogar('id7',2,0)">
+            <img src="x.png" alt="" id="id7X">
+            <img src="o.jpg" alt="" id="id7O">
+            <img src="branco.png" alt="" id="id7B">
+        </div>
+        <div id="id8" class="campo" onclick="jogar('id8',2,1)">
+            <img src="x.png" alt="" id="id8X">
+            <img src="o.jpg" alt="" id="id8O">
+            <img src="branco.png" alt="" id="id8B">
+        </div>
+        <div id="id9" class="campo" onclick="jogar('id9',2,2)">
+            <img src="x.png" alt="" id="id9X">
+            <img src="o.jpg" alt="" id="id9O">
+            <img src="branco.png" alt="" id="id9B">
+        </div>
+    </div>
+    
+</body>
+</html>
